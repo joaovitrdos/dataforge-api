@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Permite CORS em todos os endpoints
-                .allowedOrigins("https://dataaforge.netlify.app/") // Adicione as portas dos ambientes de desenvolvimento
+                .allowedOrigins("https://dataaforge.netlify.app") // Adicione as portas dos ambientes de desenvolvimento
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
